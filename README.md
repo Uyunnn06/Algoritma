@@ -3,6 +3,7 @@
 Nama: Yuyun Aulia Afrianty/ Nim: F55123025
 
 #(Peseudocode Bubble Sort:)
+```
 Fungsi BUBBLE_SORT(Array)
     Tentukan n = panjang Array
     UNTUK setiap elemen i dari 0 sampai n-1:
@@ -11,7 +12,7 @@ Fungsi BUBBLE_SORT(Array)
                 Tukar Array[j] dengan Array[j+1]
         AKHIR UNTUK
     AKHIR UNTUK
-AKHIR FUNGSI
+AKHIR FUNGSI 
 
 #(Peseudocode Marge Sort:)
 Fungsi MERGE_SORT(Array)
