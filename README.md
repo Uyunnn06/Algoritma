@@ -2,7 +2,7 @@
 
 Nama: Yuyun Aulia Afrianty/ Nim: F55123025
 
-#(Peseudocode Bubble Sort:)
+#### (Peseudocode Bubble Sort:)
 ```
 Fungsi BUBBLE_SORT(Array)
     Tentukan n = panjang Array
@@ -13,8 +13,24 @@ Fungsi BUBBLE_SORT(Array)
         AKHIR UNTUK
     AKHIR UNTUK
 AKHIR FUNGSI 
+```
+Bubble Sort
+Pseudocode: 
+- Bubble Sort bekerja dengan cara membandingkan elemen-elemen yang berdekatan dan menukarnya jika urutannya salah. Proses ini diulang hingga seluruh array terurut.
 
-#(Peseudocode Marge Sort:)
+Big O (Worst Case) dan Big Theta (Average Case):
+1. Iterasi Pertama: Pada iterasi pertama, kita membandingkan n elemen.
+2. Iterasi Kedua: Pada iterasi kedua, kita hanya perlu membandingkan n-1 elemen, dan seterusnya.
+3. Jumlah Iterasi: Total jumlah perbandingan adalah n + (n-1) + (n-2) + ... + 1, yang menghasilkan jumlah perbandingan sekitar O(n²).
+
+Analisis:
+- Big O (Worst Case): O(n²)  
+- Big Theta (Average Case): Θ(n²)  
+Pada Bubble Sort, baik di kasus terbaik (sudah terurut) maupun kasus terburuk (urutannya terbalik), jumlah iterasi tetap O(n²). Pada kasus terbaik, jika array sudah terurut, algoritma masih perlu melakukan pengecekan perbandingan, yang tetap membutuhkan O(n) waktu.
+
+
+#### (Peseudocode Merge Sort: )
+```
 Fungsi MERGE_SORT(Array)
     Jika Array memiliki lebih dari 1 elemen:
         Bagi Array menjadi dua bagian: KIRI dan KANAN
@@ -46,4 +62,17 @@ Fungsi MERGE_SORT(Array)
         AKHIR SELAMA
     AKHIR JIKA
 AKHIR FUNGSI
+```
+Merge Sort
+Pseudocode: 
+- Merge Sort menggunakan pembagian dan penggabungan, yang membuatnya bekerja secara rekursif dengan membagi array menjadi dua bagian, kemudian menggabungkannya setelah diurutkan.
+
+Big O (Worst Case) dan Big Theta (Average Case):
+1. Operasi Pembagian: Pada setiap langkah, array dibagi menjadi dua bagian. Pembagian ini terjadi hingga setiap bagian berukuran satu elemen, yang berarti kedalaman rekursi adalah log₂(n), di mana n adalah panjang array.
+2. Operasi Penggabungan: Pada setiap tingkat rekursi, kita menggabungkan dua bagian yang telah diurutkan. Proses penggabungan memerlukan waktu O(n) untuk setiap tingkat rekursi. Karena ada log₂(n) tingkat rekursi, penggabungan dilakukan sebanyak O(n log n) waktu.
+
+Analisis:
+- Big O (Worst Case): O(n log n)
+- Big Theta (Average Case): Θ(n log n)
+Merge Sort memiliki kompleksitas waktu O(n log n) baik pada kasus terbaik maupun terburuk, karena pembagian dan penggabungan tetap terjadi di setiap langkah.
 
